@@ -1,0 +1,167 @@
+/* General Page Styles */
+.todo-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Container */
+.todo-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(105, 212, 180);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Toggle Mode Switch */
+.form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Title */
+.todo-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+/* Input & Button */
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.todo-button {
+  padding: 0.8rem 1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-button:hover {
+  background-color: darkblue;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+/* Task Completion Style */
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Task Text */
+.todo-text {
+  flex: 1;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .todo-container {
+  background: #292929;
+  color: white;
+}
+
+.dark-mode .todo-input {
+  background-color: #333;
+  color: white;
+  border: 2px solid white;
+}
+
+.dark-mode .todo-item {
+  background-color: #444;
+  color: white;
+  border: 2px solid white;
+}
+
+.dark-mode .todo-list .todo-text {
+  color: white;
+}
+.dark-mode h1{
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .todo-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .todo-form {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .todo-input {
+    width: 100%;
+  }
+
+  .todo-button {
+    width: 100%;
+  }
+}
