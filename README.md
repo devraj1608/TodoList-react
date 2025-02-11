@@ -1,8 +1,23 @@
-# React + Vite
+# React To-Do List with Dark Mode 🌙☀️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **To-Do List** application built with **React**, featuring **local storage support** and a **dark mode toggle**. Easily add, complete, and delete tasks with a clean UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ **Add tasks**  
+✅ **Mark tasks as completed**  
+✅ **Remove tasks**  
+✅ **Tasks persist using Local Storage**  
+✅ **Dark mode toggle**  
+✅ **Mobile-friendly design**
+
+## 📸 Preview
+
+![Todo List Preview] (https://devraj1608.github.io/Todolist-react/)
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**  
+   ```sh
+   git clone https://github.com/devraj1608/Todolist-react.git
+   cd react-todo-list
